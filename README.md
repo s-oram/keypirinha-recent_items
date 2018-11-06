@@ -1,13 +1,19 @@
-# Keypirinha Plugin: RecentItems
+# Keypirinha Plugin: Recent Items
 
-This is RecentItems, a plugin for the
+This is Recent Items, a plugin for the
 [Keypirinha](http://keypirinha.com) launcher.
 
-RecentItems adds the contents of the Windows Recent Items directory
+Recent Items adds the contents of the Windows recent items directory
 to the Keypirinha catalog.
 
 
 ## Install
+
+### With [PackageControl](https://github.com/ueffel/Keypirinha-PackageControl)
+
+Install Package "keypirinha-recent_items"
+
+### Manually
 
 * Download `RecentItems.keypirinha-package` from
 [releases](https://github.com/s-oram/keypirinha-recent_items/releases/).
