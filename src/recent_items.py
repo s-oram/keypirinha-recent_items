@@ -27,8 +27,8 @@ class RecentItems(kp.Plugin):
     _debug = True
 
     _recent_items = []
-    _recent_files = []
-    _recent_folders = []
+    # _recent_files = []
+    # _recent_folders = []
 
     def __init__(self):
         super().__init__()
@@ -60,11 +60,11 @@ class RecentItems(kp.Plugin):
             if items_chain[-1].data_bag() == RECENT_ITEMS:
                 self.set_suggestions(self._recent_items, kp.Match.FUZZY, kp.Sort.NONE)
 
-            if items_chain[-1].data_bag() == RECENT_FILES:
-                self.set_suggestions(self._recent_items, kp.Match.FUZZY, kp.Sort.NONE)
+            # if items_chain[-1].data_bag() == RECENT_FILES:
+            #     self.set_suggestions(self._recent_items, kp.Match.FUZZY, kp.Sort.NONE)
 
-            if items_chain[-1].data_bag() == RECENT_FOLDERS:
-                self.set_suggestions(self._recent_items, kp.Match.FUZZY, kp.Sort.NONE)
+            # if items_chain[-1].data_bag() == RECENT_FOLDERS:
+            #     self.set_suggestions(self._recent_items, kp.Match.FUZZY, kp.Sort.NONE)
 
         return
 
