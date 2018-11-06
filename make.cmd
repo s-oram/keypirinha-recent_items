@@ -1,7 +1,7 @@
 @echo off
 setlocal
-set PACKAGE_NAME=RecentFiles
-set INSTALL_DIR="D:\SoftwareDev\local\KPPluginRecentFiles\SymLink_InstalledPackages"
+set PACKAGE_NAME=RecentItems
+set INSTALL_DIR="C:\Program Files (Portable)\Keypirinha\portable\Profile\InstalledPackages"
 
 if "%1"=="" goto help
 if "%1"=="-h" goto help
@@ -40,7 +40,7 @@ if "%1"=="build" (
 )
 
 if "%1"=="install" (
-    copy /Y "%BUILD_DIR%\*.keypirinha-package" "%INSTALL_DIR%\"
+    copy /Y "%BUILD_DIR%\*.keypirinha-package" %INSTALL_DIR%
     goto end
 )
 
