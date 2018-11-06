@@ -22,13 +22,7 @@ RECENT_FOLDERS = 'RECENT_FOLDERS'
 
 RECENT_ITEMS_DIR = kpu.shell_known_folder_path('{AE50C081-EBD2-438A-8655-8A092E34987A}')
 
-class RecentFiles(kp.Plugin):
-    """
-    Recent Files
-
-    The recent files plugin adds items from the Windows recent items directory
-    to your Keypirinha catalog.
-    """
+class RecentItems(kp.Plugin):
 
     _debug = True
 
@@ -55,28 +49,6 @@ class RecentFiles(kp.Plugin):
             # args_hint=kp.ItemArgsHint.FORBIDDEN,
             hit_hint=kp.ItemHitHint.IGNORE,
         ))
-
-        # items.append(self.create_item(
-        #     data_bag=RECENT_FILES,
-        #     category=kp.ItemCategory.KEYWORD,
-        #     label='Recent Files',
-        #     short_desc='Recent Files',
-        #     target=RECENT_ITEMS_DIR,
-        #     args_hint=kp.ItemArgsHint.ACCEPTED,
-        #     # args_hint=kp.ItemArgsHint.FORBIDDEN,
-        #     hit_hint=kp.ItemHitHint.IGNORE,
-        # ))
-
-        # items.append(self.create_item(
-        #     data_bag=RECENT_FOLDERS,
-        #     category=kp.ItemCategory.KEYWORD,
-        #     label='Recent Folders',
-        #     short_desc='Recent Folders',
-        #     target=RECENT_ITEMS_DIR,
-        #     args_hint=kp.ItemArgsHint.ACCEPTED,
-        #     # args_hint=kp.ItemArgsHint.FORBIDDEN,
-        #     hit_hint=kp.ItemHitHint.IGNORE,
-        # ))
 
         self.set_catalog(items + self._recent_items)
 
