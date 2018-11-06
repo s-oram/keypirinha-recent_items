@@ -7,22 +7,12 @@ RecentItems adds the contents of the Windows Recent Items directory
 to the Keypirinha catalog.
 
 
-## Download
-
-**TODO:** indicate where the latest `.keypirinha-package` file can be
-downloaded. For example a URL to the `releases` list like:
-https://github.com/s-oram/keypirinha-RecentItems/releases
-
-
 ## Install
 
-Once the `helloworld.keypirinha-package` file is installed,
-move it to the `InstalledPackage` folder located at:
-
-* `Keypirinha\portable\Profile\InstalledPackages` in **Portable mode**
-* **Or** `%APPDATA%\Keypirinha\InstalledPackages` in **Installed mode** (the
-  final path would look like
-  `C:\Users\%USERNAME%\AppData\Roaming\Keypirinha\InstalledPackages`)
+* Download `RecentItems.keypirinha-package` from
+[releases](https://github.com/s-oram/keypirinha-recent_items/releases/).
+* Copy the file into `%APPDATA%\Keypirinha\InstalledPackages` (installed mode) or
+`<Keypirinha_Home>\portable\Profile\InstalledPackages` (portable mode).
 
 
 ## Change Log
