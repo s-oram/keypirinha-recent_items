@@ -14,8 +14,6 @@ from pathlib import Path
 
 sys.path.append(os.path.join(os.path.dirname(__file__), 'lib'))
 
-# from .lib import support
-
 RECENT_ITEMS = 'RECENT_ITEMS'
 RECENT_FILES = 'RECENT_FILES'
 RECENT_FOLDERS = 'RECENT_FOLDERS'
