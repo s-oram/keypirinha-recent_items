@@ -1,6 +1,6 @@
 # Keypirinha Plugin: Recent Items
 
-This is a [Keypirinha](http://keypirinha.com) plugin called **Recent Items**. It adds the Windows recent items directory to the Keypirinha catalog.
+This is a [Keypirinha](http://keypirinha.com) plugin called **Recent Items**. It adds the Windows recent items directory contents to the Keypirinha catalog.
 
 ## Install
 
